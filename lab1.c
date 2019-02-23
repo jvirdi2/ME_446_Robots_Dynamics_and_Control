@@ -125,13 +125,6 @@ void lab(float theta1motor,float theta2motor,float theta3motor,float *tau1,float
 }
 
 void printing(void){
-
-
-    //serial_printf(&SerialA, "%.2f %.2f,%.2f   \n\r",printtheta1motor,printtheta2motor,printtheta3motor);
-//	serial_printf(&SerialA, "%.2f %.2f,%.2f   \n\r",printtheta1motor*180/PI,printtheta2motor*180/PI,printtheta3motor*180/PI);
- // serial_printf(&SerialA, "%.2f %.2f,%.2f,%.2f,%.2f,%.2f   \n\r", DHtheta1, DHtheta2, DHtheta3,x,y,z);
-  //serial_printf(&SerialA, "(%.2f %.2f,%.2f),(%.2f,%.2f,%.2f)   \n\r", DHtheta1, DHtheta2, DHtheta3,x,y,z);
-  //serial_printf(&SerialA, "%.2f,%.2f,%.2f  \n\r", IKtheta1DH,IKtheta2DH,IKtheta3DH);
     serial_printf(&SerialA, "(%.2f,%.2f,%.2f),(%.2f,%.2f,%.2f) \n\r",printtheta1motor*180/PI,printtheta2motor*180/PI,printtheta3motor*180/PI, IKthetam1*180/PI, IKthetam2*180/PI, IKthetam3*180/PI );
 }
 
